@@ -5082,7 +5082,6 @@
 			}
 , 			{
 				"box" : 				{
-					"allowdrag" : 0,
 					"autopopulate" : 1,
 					"id" : "obj-75",
 					"items" : "<empty>",
