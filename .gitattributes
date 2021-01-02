@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# no diff for Max files
+*.maxpat -text merge=binary
