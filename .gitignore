@@ -1,0 +1,14 @@
+# Mac OSX Finder ---
+.DS_Store
+
+# *(Autosaved).*
+.finderinfo
+
+# don't track dev-files:
+/testing
+
+# archives for local backups
+*.zip
+
+# development notes
+*.dev
