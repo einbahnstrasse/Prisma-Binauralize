@@ -41,6 +41,82 @@
 		"title" : "Binauralize",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 165.0, 242.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 164.5, 308.5, 77.0, 22.0 ],
+					"text" : "s audio-input"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-58",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 189.5, 268.5, 28.0, 33.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 194.5, 9.0, 35.0, 20.0 ],
+					"text" : "adc~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "live.toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"parameter_enable" : 1,
+					"parameter_mappable" : 0,
+					"patching_rect" : [ 165.0, 274.0, 15.0, 15.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 228.0, 12.0, 15.0, 15.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_longname" : "live.toggle[2]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "live.toggle",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"varname" : "live.toggle[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 16,
+					"outlettype" : [ "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
+					"patching_rect" : [ 409.0, 381.0, 166.0, 22.0 ],
+					"text" : "ms.audio-input audio-input"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-70",
 					"linecount" : 2,
 					"maxclass" : "message",
@@ -48,7 +124,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 561.0, 741.0, 89.0, 35.0 ],
-					"presentation_linecount" : 2,
 					"text" : ";\rspat.oper open"
 				}
 
@@ -926,8 +1001,8 @@
 , 							{
 								"name" : "bubble text",
 								"default" : 								{
-									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -956,7 +1031,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 121.0, 182.0, 44.0, 22.0 ],
+					"patching_rect" : [ 97.0, 181.0, 44.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1055,7 +1130,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 121.0, 211.0, 69.0, 22.0 ],
+					"patching_rect" : [ 97.0, 210.0, 69.0, 22.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "nogrow", "noclose", "nozoom", "nofloat", "menu", "nominimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 21, 406, 409, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -1067,7 +1142,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 140.5, 154.5, 28.0, 20.0 ],
+					"patching_rect" : [ 116.5, 153.5, 28.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 348.5, 9.0, 28.0, 20.0 ],
 					"text" : "edit"
@@ -1083,7 +1158,7 @@
 					"outlettype" : [ "" ],
 					"parameter_enable" : 1,
 					"parameter_mappable" : 0,
-					"patching_rect" : [ 121.5, 154.5, 15.0, 15.0 ],
+					"patching_rect" : [ 97.5, 153.5, 15.0, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 375.5, 12.0, 15.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
@@ -2497,8 +2572,8 @@
 , 															{
 																"name" : "bubble text",
 																"default" : 																{
-																	"fontname" : [ "Arial" ],
-																	"fontsize" : [ 12.0 ]
+																	"fontsize" : [ 12.0 ],
+																	"fontname" : [ "Arial" ]
 																}
 ,
 																"parentstyle" : "",
@@ -10370,6 +10445,118 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-53", 15 ],
+					"source" : [ "obj-52", 15 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 14 ],
+					"source" : [ "obj-52", 14 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 13 ],
+					"source" : [ "obj-52", 13 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 12 ],
+					"source" : [ "obj-52", 12 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 11 ],
+					"source" : [ "obj-52", 11 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 10 ],
+					"source" : [ "obj-52", 10 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 9 ],
+					"source" : [ "obj-52", 9 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 8 ],
+					"source" : [ "obj-52", 8 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 7 ],
+					"source" : [ "obj-52", 7 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 6 ],
+					"source" : [ "obj-52", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 5 ],
+					"source" : [ "obj-52", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 4 ],
+					"source" : [ "obj-52", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 3 ],
+					"source" : [ "obj-52", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 2 ],
+					"source" : [ "obj-52", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 1 ],
+					"source" : [ "obj-52", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-52", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 15 ],
 					"source" : [ "obj-53", 15 ]
 				}
@@ -10630,6 +10817,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-62", 0 ],
+					"source" : [ "obj-61", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"source" : [ "obj-69", 1 ]
 				}
@@ -10689,6 +10890,7 @@
 			"obj-57::obj-17::obj-35" : [ "live.toggle[67]", "live.toggle", 0 ],
 			"obj-57::obj-17::obj-38" : [ "live.toggle[68]", "live.toggle", 0 ],
 			"obj-57::obj-22::obj-1" : [ "live.dial[4]", "yaw", 0 ],
+			"obj-61" : [ "live.toggle[2]", "live.toggle", 0 ],
 			"obj-74::obj-69" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-74::obj-81" : [ "live.dial[5]", " ", 0 ],
 			"parameterbanks" : 			{
@@ -10740,6 +10942,20 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "ms.audio-input.maxpat",
+				"bootpath" : "~/Research/Prisma-Binauralize/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "ms.adc~16.maxpat",
+				"bootpath" : "~/Research/Prisma-Binauralize/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "spat.meter~.mxo",
 				"type" : "iLaX"
 			}
@@ -10785,8 +11001,8 @@
 , 			{
 				"name" : "bubble text",
 				"default" : 				{
-					"fontname" : [ "Arial" ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
