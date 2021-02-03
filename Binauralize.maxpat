@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 23.0, 406.0, 388.0 ],
+		"rect" : [ 0.0, 21.0, 406.0, 388.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -155,8 +155,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 494.0, 516.0, 70.0, 22.0 ],
-					"text" : "var playpos"
+					"patching_rect" : [ 494.0, 516.0, 115.0, 22.0 ],
+					"text" : "var sfplayer.playpos"
 				}
 
 			}
@@ -429,8 +429,8 @@
 , 							{
 								"name" : "bubble text",
 								"default" : 								{
-									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -439,8 +439,8 @@
 , 							{
 								"name" : "caption text",
 								"default" : 								{
-									"fontface" : [ 2 ],
-									"fontsize" : [ 11.0 ]
+									"fontsize" : [ 11.0 ],
+									"fontface" : [ 2 ]
 								}
 ,
 								"parentstyle" : "",
@@ -449,8 +449,8 @@
 , 							{
 								"name" : "instruct key",
 								"default" : 								{
-									"fontname" : [ "Arial Bold" ],
-									"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ]
+									"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ],
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -2554,8 +2554,8 @@
 , 							{
 								"name" : "bubble text",
 								"default" : 								{
-									"fontname" : [ "Arial" ],
-									"fontsize" : [ 12.0 ]
+									"fontsize" : [ 12.0 ],
+									"fontname" : [ "Arial" ]
 								}
 ,
 								"parentstyle" : "",
@@ -2564,8 +2564,8 @@
 , 							{
 								"name" : "caption text",
 								"default" : 								{
-									"fontface" : [ 2 ],
-									"fontsize" : [ 11.0 ]
+									"fontsize" : [ 11.0 ],
+									"fontface" : [ 2 ]
 								}
 ,
 								"parentstyle" : "",
@@ -2574,8 +2574,8 @@
 , 							{
 								"name" : "instruct key",
 								"default" : 								{
-									"fontname" : [ "Arial Bold" ],
-									"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ]
+									"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ],
+									"fontname" : [ "Arial Bold" ]
 								}
 ,
 								"parentstyle" : "",
@@ -2684,7 +2684,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 97.0, 210.0, 69.0, 22.0 ],
-					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "nogrow", "noclose", "nozoom", "nofloat", "menu", "nominimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 23, 406, 411, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "nogrow", "noclose", "nozoom", "nofloat", "menu", "nominimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 21, 406, 409, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
 
@@ -3405,7 +3405,8 @@
 					"presentation_rect" : [ 158.882354500000019, 144.5, 78.0, 78.0 ],
 					"size" : 360.0,
 					"style" : "default",
-					"thickness" : 100.0
+					"thickness" : 100.0,
+					"vtracking" : 0
 				}
 
 			}
@@ -3856,7 +3857,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-8",
@@ -4069,8 +4069,8 @@
 													"numinlets" : 1,
 													"numoutlets" : 2,
 													"outlettype" : [ "", "" ],
-													"patching_rect" : [ 431.0, 234.0, 70.0, 22.0 ],
-													"text" : "var playpos"
+													"patching_rect" : [ 431.0, 234.0, 115.0, 22.0 ],
+													"text" : "var sfplayer.playpos"
 												}
 
 											}
@@ -4652,8 +4652,8 @@
 , 															{
 																"name" : "bubble text",
 																"default" : 																{
-																	"fontname" : [ "Arial" ],
-																	"fontsize" : [ 12.0 ]
+																	"fontsize" : [ 12.0 ],
+																	"fontname" : [ "Arial" ]
 																}
 ,
 																"parentstyle" : "",
@@ -4662,8 +4662,8 @@
 , 															{
 																"name" : "caption text",
 																"default" : 																{
-																	"fontface" : [ 2 ],
-																	"fontsize" : [ 11.0 ]
+																	"fontsize" : [ 11.0 ],
+																	"fontface" : [ 2 ]
 																}
 ,
 																"parentstyle" : "",
@@ -4672,8 +4672,8 @@
 , 															{
 																"name" : "instruct key",
 																"default" : 																{
-																	"fontname" : [ "Arial Bold" ],
-																	"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ]
+																	"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ],
+																	"fontname" : [ "Arial Bold" ]
 																}
 ,
 																"parentstyle" : "",
@@ -4918,8 +4918,8 @@
 , 											{
 												"name" : "bubble text",
 												"default" : 												{
-													"fontname" : [ "Arial" ],
-													"fontsize" : [ 12.0 ]
+													"fontsize" : [ 12.0 ],
+													"fontname" : [ "Arial" ]
 												}
 ,
 												"parentstyle" : "",
@@ -4928,8 +4928,8 @@
 , 											{
 												"name" : "caption text",
 												"default" : 												{
-													"fontface" : [ 2 ],
-													"fontsize" : [ 11.0 ]
+													"fontsize" : [ 11.0 ],
+													"fontface" : [ 2 ]
 												}
 ,
 												"parentstyle" : "",
@@ -4938,8 +4938,8 @@
 , 											{
 												"name" : "instruct key",
 												"default" : 												{
-													"fontname" : [ "Arial Bold" ],
-													"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ]
+													"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ],
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -8708,8 +8708,8 @@
 , 											{
 												"name" : "bubble text",
 												"default" : 												{
-													"fontname" : [ "Arial" ],
-													"fontsize" : [ 12.0 ]
+													"fontsize" : [ 12.0 ],
+													"fontname" : [ "Arial" ]
 												}
 ,
 												"parentstyle" : "",
@@ -8718,8 +8718,8 @@
 , 											{
 												"name" : "caption text",
 												"default" : 												{
-													"fontface" : [ 2 ],
-													"fontsize" : [ 11.0 ]
+													"fontsize" : [ 11.0 ],
+													"fontface" : [ 2 ]
 												}
 ,
 												"parentstyle" : "",
@@ -8728,8 +8728,8 @@
 , 											{
 												"name" : "instruct key",
 												"default" : 												{
-													"fontname" : [ "Arial Bold" ],
-													"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ]
+													"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ],
+													"fontname" : [ "Arial Bold" ]
 												}
 ,
 												"parentstyle" : "",
@@ -13998,8 +13998,8 @@
 , 			{
 				"name" : "bubble text",
 				"default" : 				{
-					"fontname" : [ "Arial" ],
-					"fontsize" : [ 12.0 ]
+					"fontsize" : [ 12.0 ],
+					"fontname" : [ "Arial" ]
 				}
 ,
 				"parentstyle" : "",
@@ -14008,8 +14008,8 @@
 , 			{
 				"name" : "caption text",
 				"default" : 				{
-					"fontface" : [ 2 ],
-					"fontsize" : [ 11.0 ]
+					"fontsize" : [ 11.0 ],
+					"fontface" : [ 2 ]
 				}
 ,
 				"parentstyle" : "",
@@ -14018,8 +14018,8 @@
 , 			{
 				"name" : "instruct key",
 				"default" : 				{
-					"fontname" : [ "Arial Bold" ],
-					"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ]
+					"textcolor" : [ 0.261802, 0.646774, 0.650603, 1.0 ],
+					"fontname" : [ "Arial Bold" ]
 				}
 ,
 				"parentstyle" : "",
